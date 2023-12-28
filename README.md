@@ -13,11 +13,12 @@ Helps with encryption of BestBuy
 
 ```javascript
 import { emailPublicKey, emailKeyId, activityPublicKey, activityKeyId, defaultAlgorithm } from './constants.js';
+import { createEncryptor, encryptEmail, encryptActivity, encryptInfo } from './encryption.js';
 
 const emailEncryptor = createEncryptor(emailPublicKey)
 const activityEncryptor = createEncryptor(activityPublicKey)
 
-const email = "john@example.com"
+const email = "infectkk@gmail.com"
 const userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
 const encryptedEmail = encryptEmail(emailEncryptor, defaultAlgorithm, email, emailKeyId)
