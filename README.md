@@ -9,6 +9,10 @@ Helps with encryption of BestBuy
 1. `activity`
 2. `info`
 3. `encryptedEmail`
+
+## Soon
+1. `x-grid`
+
 ## Usage
 
 ```javascript
