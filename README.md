@@ -17,15 +17,30 @@ Helps with encryption of BestBuy
 
 ```javascript
 import { emailPublicKey, emailKeyId, activityPublicKey, activityKeyId, defaultAlgorithm } from './constants.js';
-import { createEncryptor, encryptEmail, encryptActivity, encryptInfo } from './encryption.js';
+import { createEncryptor, encryptData } from './encryption.js';
 
 const emailEncryptor = createEncryptor(emailPublicKey)
 const activityEncryptor = createEncryptor(activityPublicKey)
 
-const email = "john@example.com"
+const email = "user@example.com"
 const userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+const activityTimestamp = (new Date).toISOString()
 
-const encryptedEmail = encryptEmail(emailEncryptor, defaultAlgorithm, email, emailKeyId)
-const encryptedActivity = encryptActivity(activityEncryptor, defaultAlgorithm, email, activityKeyId)
-const encryptedInfo = encryptInfo(activityEncryptor, defaultAlgorithm, userAgent, activityKeyId) 
+const infoData = {
+  "userAgent": userAgent
+}
+
+const activityData = {
+  "mouseMoved": true,
+  "keyboardUsed": true,
+  "fieldReceivedInput": true,
+  "fieldReceivedFocus": true,
+  "timestamp": activityTimestamp,
+  "email": email
+}
+
+const encryptedEmail = encryptData(emailEncryptor, defaultAlgorithm, email, emailKeyId)
+const encryptedActivity = encryptData(activityEncryptor, defaultAlgorithm, JSON.stringify(activityData), activityKeyId)
+const encryptedInfo = encryptData(activityEncryptor, defaultAlgorithm, JSON.stringify(infoData), activityKeyId) 
+
 ```
