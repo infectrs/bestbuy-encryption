@@ -4,7 +4,4 @@ export const emailKeyId = "email-2017-01"
 export const activityPublicKey = "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoSq5P+llMSIxWSxhZcDZ\nf70fXrm/pzVgOQs725frxWPZkSgSHd6Y6fckr0Q4Bokn1bpgLKR9p0BuPcyAsOaF\nwhStUNgMcRtgKQ/JhlORZSb3Mx7ZD3pg8VCJ98OSyqPKwtoOPekGr8F6bNvkACaR\ndc/LENAVm+S5Q7UeNHfLKNYZB8vNkGzj+UjthP5qiuSFLhJ67ezdV6CzYavkDJAc\nt7zhP5FmgUYvpZqxGZ2Ra5VOcNKiRTWj16s61FWCxBQcVmYKMlrCdmoIli96HxlA\niF0cy5N7sOTwhkjRPGkcaFKfan9stYlqYPME9omVgEJ3Uag98iU6EbyZU5GWhauG\nCQIDAQAB\n-----END PUBLIC KEY-----\n"
 export const activityKeyId = "user-activity-2016-09"
 
-export const ciaGridPublicKey = "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAvtKfGNseAJUYhZuATXzC\nN7Ec+j3rhwnfO7qFwjiL4slRFMlYzV2KvSyfE6j7sxN1kzyzArpIAlAfb1bUgTld\n3YscvwwJ109ESV1+D6mXY8Wwdk5SNUxiz4cGVcKNm7vyuE9vbjOxelRLLCi4UbB9\nQH9WVZTRpVrZx6LRiQCyDaagQ2DJmZwnzjoXHtA8yqcfPHv+MJxDWO/IWCq4nm61\nmYbOJshOjOFB6oD4VtYwUWbkZppw7VqBtM1x+aGi9DrfjYfYGAlkmWIXlMNhcMCs\nmwDC68N2NugTKp//XppAUxoTYNbI0Aq2x+sN033tupFLsRZY/nbHBVcWn3Pby3sr\nh1JKjZx3mGfFqSNAmrH/xhx11wc9L/GVI1evC4jBWLVoPuPx57BqTD5rCwSM/xG4\nT7XrVQzEimlyMG/gusgq5MzKDrvZ6c6Y+mxFYC0NKxwmWyZSIIJv+vJr21cp8+dD\ncXQJlVEvyXGrI+OCi6ObWMV8mKUhus/OUWDHCM/N+90XRhGHYiOBJBGArzCp/c/O\ngjIJHo3fComKtc8D4EskmzW1MNfEVk8KO83GBD2HI7D6tlbcfwobd2zw3d4X0Jct\ny23OgxISiy5qNF9DERerOlCS3g8/w+gfmMjS8fVyurDEp2WX9q0CNnkpAJm2mwu8\nl8PKXHZ0ZgOwzI505mo75L8CAwEAAQ==\n-----END PUBLIC KEY-----\n"
-export const ciaGridKeyId = "cia-grid-v1"
-
 export const defaultAlgorithm = "RSA-OAEP"
